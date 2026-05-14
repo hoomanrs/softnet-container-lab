@@ -9,12 +9,14 @@ topology:
     node1:
       binds:
         - configs/node1.cfg:/etc/nodes/node1.cfg:ro
+        - bin/entrypoint.sh:/entrypoint.sh:ro  # <--- added later
       exec:
         - bash /entrypoint.sh
 
     node2:
       binds:
         - configs/node2.cfg:/etc/nodes/node2.cfg:ro
+        - bin/entrypoint.sh:/entrypoint.sh:ro  # <--- added later
       exec:
         - bash /entrypoint.sh
 

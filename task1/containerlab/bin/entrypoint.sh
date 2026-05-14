@@ -47,3 +47,4 @@ else
 fi
 
 echo "[INFO] Node ${HOSTNAME} ready"
+echo "[DEBUG] I'm the entrypoint here!"
